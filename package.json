@@ -12,7 +12,7 @@
   },
   "peerDependencies": {
     "ical-js-parser": "0.7.0",
-    "kalend": "0.16.0",
+    "kalend": "0.16.1 - 0",
     "tsdav": "2.0.3"
   },
   "devDependencies": {
