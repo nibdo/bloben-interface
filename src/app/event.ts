@@ -4,6 +4,7 @@ import {
   ATTENDEE_ROLE,
   EVENT_TYPE,
   REPEATED_EVENT_CHANGE_TYPE,
+  SOURCE_TYPE,
 } from '../enums';
 import { DateTimeObject } from 'ical-js-parser';
 import { EventStyle } from '../interface';
@@ -37,7 +38,7 @@ export interface Attendee {
 }
 
 export interface EmailInvite {
-  eventDecrypted: EventDecrypted;
+  eventDecrypted: any;
   attendees: Attendee[];
 }
 
@@ -148,30 +149,6 @@ export interface EventBody {
   deletedAt?: string | null;
 }
 
-export interface EventDecrypted {
-  id: string;
-  externalID: string | null;
-  calendarID: string;
-  summary: string;
-  startAt: string;
-  endAt: string;
-  timezoneStartAt: string;
-  timezoneEndAt: string;
-  allDay: boolean;
-  color: string | null;
-  description: string;
-  location: string;
-  attendees: any;
-  organizer: any;
-  createdAt: string;
-  updatedAt: string;
-  deletedAt?: string | null | undefined;
-  isRepeated: boolean;
-  rRule: string | null;
-  alarms: any;
-  sequence: string;
-}
-
 interface EventResultProps {
   exdate?: any[];
   alarms?: any[];
@@ -201,6 +178,7 @@ export interface EventResult {
   isRepeated: boolean;
   etag?: string;
   url?: string;
+  sourceType: SOURCE_TYPE;
   type: EVENT_TYPE;
   color: string;
   calendarID: string;
@@ -227,6 +205,7 @@ export interface SearchEventsResponse {
   startAt: string;
   endAt: string;
   timezoneStartAt: string | null;
+  sourceType: SOURCE_TYPE;
   type: EVENT_TYPE;
 }
 

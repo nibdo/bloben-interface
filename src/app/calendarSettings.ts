@@ -10,6 +10,7 @@ export interface PatchCalendarSettingsRequest {
   showWeekNumbers?: boolean;
   defaultAddressBookID?: string;
   saveContactsAuto?: boolean;
+  showTasks?: boolean;
 }
 
 export interface CalendarSettingsResponse {
@@ -22,4 +23,5 @@ export interface CalendarSettingsResponse {
   showWeekNumbers: boolean;
   defaultAddressBookID: string | null;
   saveContactsAuto: boolean;
+  showTasks: boolean;
 }

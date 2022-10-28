@@ -1,6 +1,6 @@
 {
   "name": "bloben-interface",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "author": "nibdo",
   "license": "GPL",
   "private": false,
@@ -12,24 +12,24 @@
   },
   "peerDependencies": {
     "ical-js-parser": "0.7.0",
-    "kalend": "0.16.1 - 0",
+    "kalend": "0.17.0",
     "tsdav": "2.0.3"
   },
   "devDependencies": {
-    "@types/node": "18.7.20",
-    "@typescript-eslint/eslint-plugin": "5.38.0",
-    "@typescript-eslint/parser": "5.38.0",
-    "eslint": "8.22.0",
-    "eslint-config-prettier": "6.15.0",
+    "@types/node": "18.8.3",
+    "@typescript-eslint/eslint-plugin": "5.39.0",
+    "@typescript-eslint/parser": "5.39.0",
+    "eslint": "8.26.0",
+    "eslint-config-prettier": "8.5.0",
     "eslint-config-react": "1.1.7",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.31.8",
     "eslint-plugin-sort-imports-es6-autofix": "0.6.0",
     "eslint-plugin-unused-imports": "2.0.0",
-    "husky": "7.0.4",
+    "husky": "8.0.1",
     "prettier": "2.7.1",
     "sass": "1.55.0",
-    "typescript": "4.8.3"
+    "typescript": "4.8.4"
   },
   "scripts": {
     "husky": "npx husky install && npx husky add .husky/pre-commit \"npm run lint\"",

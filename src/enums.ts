@@ -35,9 +35,19 @@ export enum SOCKET_CRUD_ACTION {
   FULL = 'FULL',
 }
 
-export enum EVENT_TYPE {
+export enum SOURCE_TYPE {
   CALDAV = 'CALDAV',
   WEBCAL = 'WEBCAL',
+}
+
+export enum EVENT_TYPE {
+  EVENT = 'EVENT',
+  TASK = 'TASK',
+}
+
+export enum TASK_STATUS {
+  COMPLETED = 'COMPLETED',
+  NEEDS_ACTION = 'NEEDS-ACTION',
 }
 
 export enum LOG_FILE_TYPE {
