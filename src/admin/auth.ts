@@ -31,7 +31,9 @@ export interface AdminCreateUserRequest {
 }
 
 export interface AdminUpdateUserRequest {
-  isEnabled: boolean;
-  emailsAllowed: boolean;
+  isEnabled?: boolean;
+  emailsAllowed?: boolean;
   role?: ROLE;
+  username?: string;
+  password?: string;
 }

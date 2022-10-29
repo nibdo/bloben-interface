@@ -20,7 +20,7 @@
   "exclude": [
     "node_modules",
     "dist",
-    "src/test",
+    "src/test"
   ],
   "baseUrl": "src",
   "include": [
