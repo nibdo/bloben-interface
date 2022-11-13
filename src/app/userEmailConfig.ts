@@ -29,6 +29,7 @@ export interface GetUserEmailConfigResponse {
   mailto: string | null;
   smtp: SmtpData | null;
   imap: ImapData | null;
+  calendarForImportID: string | null;
 }
 
 export type UserEmailConfigData = UpdateUserEmailConfigRequest;
@@ -43,4 +44,8 @@ export interface ImapConfig {
   port: number;
   secure: boolean;
   auth: ImapAuth;
+}
+
+export interface PatchUserEmailConfigRequest {
+  calendarForImportID: string | null;
 }

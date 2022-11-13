@@ -1,6 +1,6 @@
 {
   "name": "bloben-interface",
-  "version": "0.0.11",
+  "version": "0.0.14",
   "author": "nibdo",
   "license": "GPL",
   "private": false,
@@ -11,7 +11,7 @@
     "url": "https://github.com/nibdo/bloben-interface"
   },
   "peerDependencies": {
-    "ical-js-parser": "0.7.0",
+    "ical-js-parser": "0.7.1-beta.3",
     "kalend": "^0.17.0",
     "tsdav": "2.0.3"
   },
