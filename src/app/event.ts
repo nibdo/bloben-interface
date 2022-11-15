@@ -199,6 +199,13 @@ export interface UpdatePartstatStatusRequest {
   inviteMessage?: string;
 }
 
+export interface UpdatePartstatStatusRepeatedEventRequest {
+  status: ATTENDEE_PARTSTAT;
+  sendInvite?: boolean;
+  inviteMessage?: string;
+  type: REPEATED_EVENT_CHANGE_TYPE;
+}
+
 export interface SearchEventsResponse {
   id: string;
   summary: string;
