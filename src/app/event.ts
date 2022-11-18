@@ -204,6 +204,9 @@ export interface UpdatePartstatStatusRepeatedEventRequest {
   sendInvite?: boolean;
   inviteMessage?: string;
   type: REPEATED_EVENT_CHANGE_TYPE;
+  recurrenceID?: DateTimeObject;
+  startAt: string;
+  endAt: string;
 }
 
 export interface SearchEventsResponse {
