@@ -1,6 +1,7 @@
 export interface LoginRequest {
   username: string;
   password: string;
+  browserID: string | null;
 }
 export interface LoginDemoRequest {
   username: string;

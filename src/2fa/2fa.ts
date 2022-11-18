@@ -14,6 +14,7 @@ export interface LoginWithTwoFactorRequest {
   username: string;
   password: string;
   otpCode: string;
+  browserID: string | null;
 }
 
 export interface LoginWithTwoFactorAdminResponse {

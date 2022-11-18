@@ -3,6 +3,7 @@ import { ROLE } from '../enums';
 export interface AdminLoginRequest {
   username: string;
   password: string;
+  browserID: string | null;
 }
 
 export interface AdminChangePasswordRequest {
