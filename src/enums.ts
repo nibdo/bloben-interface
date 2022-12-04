@@ -38,6 +38,7 @@ export enum SOCKET_CRUD_ACTION {
 export enum SOURCE_TYPE {
   CALDAV = 'CALDAV',
   WEBCAL = 'WEBCAL',
+  EMAIL_INVITE = 'EMAIL_INVITE',
 }
 
 export enum EVENT_TYPE {
