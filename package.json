@@ -1,6 +1,6 @@
 {
   "name": "bloben-interface",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "author": "nibdo",
   "license": "GPL",
   "private": false,
@@ -11,25 +11,24 @@
     "url": "https://github.com/nibdo/bloben-interface"
   },
   "peerDependencies": {
-    "ical-js-parser": "0.7.1-beta.11",
+    "ical-js-parser": "0.7.1",
     "kalend": "^0.17.0",
     "tsdav": "2.0.3"
   },
   "devDependencies": {
-    "@types/node": "18.8.3",
-    "@typescript-eslint/eslint-plugin": "5.39.0",
-    "@typescript-eslint/parser": "5.39.0",
-    "eslint": "8.26.0",
+    "@types/node": "18.11.10",
+    "@typescript-eslint/eslint-plugin": "5.45.0",
+    "@typescript-eslint/parser": "5.45.0",
+    "eslint": "8.29.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-config-react": "1.1.7",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-react": "7.31.8",
+    "eslint-plugin-react": "7.31.11",
     "eslint-plugin-sort-imports-es6-autofix": "0.6.0",
     "eslint-plugin-unused-imports": "2.0.0",
-    "husky": "8.0.1",
-    "prettier": "2.7.1",
-    "sass": "1.55.0",
-    "typescript": "4.8.4"
+    "husky": "8.0.2",
+    "prettier": "2.8.0",
+    "typescript": "4.9.3"
   },
   "scripts": {
     "husky": "npx husky install && npx husky add .husky/pre-commit \"npm run lint\"",

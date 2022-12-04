@@ -163,9 +163,9 @@ interface EventResultProps {
 }
 
 export interface EventResult {
-  id: string; // entity id
-  externalID: string; // caldav, webcal id
-  internalID?: string; // id to ref repeated events
+  id: string;
+  externalID: string;
+  internalID?: string;
   startAt: string;
   endAt: string;
   timezoneStartAt: string | null;
@@ -191,6 +191,7 @@ export interface EventResult {
   createdAt: string;
   updatedAt: string;
   style?: EventStyle;
+  updateDisabled?: boolean;
 }
 
 export interface UpdatePartstatStatusRequest {
@@ -205,8 +206,8 @@ export interface UpdatePartstatStatusRepeatedEventRequest {
   inviteMessage?: string;
   type: REPEATED_EVENT_CHANGE_TYPE;
   recurrenceID?: DateTimeObject;
-  startAt: string;
-  endAt: string;
+  startAt?: string;
+  endAt?: string;
 }
 
 export interface SearchEventsResponse {
