@@ -163,9 +163,9 @@ interface EventResultProps {
 }
 
 export interface EventResult {
-  id: string;
-  externalID: string;
-  internalID?: string;
+  id: string; // entity id
+  externalID: string; // caldav, webcal id
+  internalID?: string; // id to ref repeated events
   startAt: string;
   endAt: string;
   timezoneStartAt: string | null;
